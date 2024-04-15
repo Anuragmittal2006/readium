@@ -1,0 +1,60 @@
+
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header> 
+    <nav class="menu">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="about.html">About Us</a></li>
+           
+            <!-- Add more menu items as needed -->
+        </ul>
+    </nav>
+    <h1>Virtual Library</h1>
+    <p>Explore a world of knowledge</p>
+    <input type="text" id="searchInput" oninput="searchBooks()" placeholder="Search for books...">
+</header>
+<div id="readingList">
+    <!-- Reading list books will be displayed here -->
+</div>
+  
+<div class="library" id="bookContainer">
+    <!-- Books will be displayed here -->
+    <div class="shelf">
+        <div class="book" onclick="openBook('https://drive.google.com/file/d/1-QC2bAlph1hpFV8XMz7mYuPTotOkmfly/view?usp=drive_link')">
+            <img src="https://images.app.goo.gl/BP1Mxo1pvPpLraxM9" >
+            <div class="religious">
+                <h3>Geeta</h3>
+               
+            </div>
+          
+        </div>
+        <div class="book" onclick="openBook('https://drive.google.com/file/d/1ISk4aYVlol553wq4jrnwaCd2rIPP1MXN/view?usp=drive_link')">
+            <img src="https://images.app.goo.gl/Pdi8nBDsApGDuQE1A" >
+            <div class="religious">
+                <h3>RamCharitManas</h3>
+                
+            </div>
+        </div>
+        <!-- Repeat similar structure for other books -->
+    </div>
+</div>
+<footer> <div class="social-icons">
+        <a href="#" onclick="shareOnFacebook()"><img src="https://images.app.goo.gl/GCkMmFJYDvmGJuvm6" ></a>
+        <a href="#" onclick="shareOnTwitter()"><img src="" ></a>
+        <a href="#" onclick="shareOnWhatsApp()"><img src="whatsapp-icon.png"></a>
+        <!-- Add more social media icons/buttons as needed -->
+  </div>
+    <p>&copy; 2024 Virtual Library. All rights reserved.</p>
+</footer>
+
+<script src="scripts.js"></script>
+
+</body>
+</html>

@@ -1,0 +1,145 @@
+/* Reset CSS */
+
+
+/* Global styles */
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to left, #BDBDBD,#37474F);
+    color: #333333;
+    line-height: 1.6;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    background-color: #f5f5f5;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+header {
+    background: linear-gradient(to left,#BDBDBD,#37474F);
+    padding: 20px 0;
+    text-align: center;
+    color: #ffffff;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    transition: background-color 0.3s; /* Transition effect */
+}
+
+header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+    transition: transform 0.3s; /* Transition effect */
+}
+
+header h1:hover { transform: scale(1.1); /* Scale up header text on hover */
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 18px;
+}
+
+.library {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 20px;
+}
+
+.book {
+    background: linear-gradient(to right, #fbc2eb, #a6c1ee);
+    border-radius: 10px;
+    margin-bottom: 20px;
+    overflow: hidden;
+    width: 300px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s; /* Transition effect */
+}
+
+.book:hover {
+    transform: scale(1.05); /* Scale up book card on hover */
+}
+
+.book img {
+    width: 100%;
+    height: auto;
+    border-bottom: 1px solid #dee2e6;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.book-info {
+    background: linear-gradient(to ,#BDBDBD,#37474F );
+    padding: 20px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    transition: transform 0.3s; /* Transition effect */
+}
+
+.book-info:hover {
+    transform: translateY(-5px); /* Move book info slightly up on hover */
+}
+
+.book-info h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+    color: #333333;
+}
+
+.book-info p {
+    font-size: 16px;
+    color: #666666;
+}
+
+#searchInput {
+    width: 50%;
+    padding: 15px; /* Increased padding for better visibility */
+    border-radius: 20px; /* Rounded corners */
+    margin-bottom: 20px;
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s; /* Transition effect */
+}
+
+#searchInput:focus {
+    transform: scale(1.05); /* Scale up search bar on focus */
+}
+#searchInput:hover {
+    transform: scale(1.05); /* Scale up search bar on focus or hover */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Add a box shadow on focus or hover */
+   background : linear-gradient(to right, #E0F7FA, #FFEBEE);
+}
+footer {
+    background: linear-gradient(to left,#BDBDBD,#37474F);
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    transition: background-color 0.3s; /* Transition effect */
+}
+
+footer:hover {
+    background-color: #444444; /* Darken footer background on hover */
+}
+
+footer p {
+    transition: transform 0.3s; /* Transition effect */
+}
+
+footer p:hover {
+    transform: translateY(-3px); /* Move footer text slightly up on hover */
+}
